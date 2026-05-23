@@ -38,7 +38,7 @@ flow = InstalledAppFlow.from_client_secrets_file(
     SCOPES
 )
 
-credentials = flow.run_local_server(port=0)
+credentials = flow.run_console()
 
 youtube = build("youtube", "v3", credentials=credentials)
 
